@@ -20,9 +20,9 @@ namespace TryCodeAnalysis;
 
 public class Example
 {
-    public static void Main(string args)
+    public static void Main(string[] args)
     {
-        var msSqlConfiguration = MsSqlConfiguration.MsSql2008.ConnectionString("");
+        var msSqlConfiguration = MsSqlConfiguration.MsSql2008.ConnectionString(string.Empty);
 
         var fluentConfiguration = Fluently.Configure().Database(msSqlConfiguration);
         var sessionFactory = fluentConfiguration.BuildSessionFactory();
@@ -78,6 +78,7 @@ if (!result.Success)
     {
         Console.WriteLine(diagnostic.ToString());
     }
+    Environment.Exit(-1);
 }
 
 var model = compilation.GetSemanticModel(tree);
