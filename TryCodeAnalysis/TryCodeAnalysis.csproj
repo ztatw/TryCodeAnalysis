@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.6.0-1.final" />
+      <PackageReference Include="NHibernate" Version="5.4.1" />
+    </ItemGroup>
+
+</Project>
